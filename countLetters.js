@@ -2,10 +2,7 @@
 // Function can also report how many instances of each letter were found in a string.
 
 function countLetters(str) {
-  var output = {
-    a: 1,
-    b: 1
-  }
+  var output = {}
 
   for (i = 0; i < str.length; i++) {
     var char = str[i];
