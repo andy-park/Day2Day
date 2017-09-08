@@ -1,14 +1,16 @@
 var colors = ["red", "white", "blue", "green", "purple"]
 
-// colors.map(function(str) {
-//   return colors.length;
-// });
-
 var shortWords = colors.filter(function(fnd){
   return fnd.length < 5;
 });
 
 console.log(shortWords)
+
+colors.map(function(str) {
+  return colors.length;
+});
+
+console.log(colors)
 
 // colors.map(function(cap) {
 //   return colors.toUpperCase('');
