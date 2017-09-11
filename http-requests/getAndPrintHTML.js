@@ -1,6 +1,6 @@
 const https = require('https');
 
-function getAndPrintHTML() {
+function getAndPrintHTML(rawData) {
 
   var requestOptions = {
     host: 'sytantris.github.io',
@@ -20,8 +20,8 @@ function getAndPrintHTML() {
 
     res.on('end', function () {
       console.log(rawData);
-      //callback(rawData);
+      // callback(rawData);
     });
   })
 }
-getAndPrintHTMLChunks();
+getAndPrintHTML();
