@@ -1,0 +1,41 @@
+# Require and Exports
+
+- Why would a program need more than one file?
+  - If you have a reusable function that is used in more than one program
+  - If you want to use multiple languages
+  - If the file gets HUGE
+  - Utilize previous author's code
+
+    -Template String, const, node path docs, FIIF, mocha tests (LOOK UP)
+
+- File dependencies that create a tree structure. Root of a tree is the top in programming. Files branch down from the root.
+    - New Syntax: require('./filename'); call require to a string of the file name
+
+- Be aware of function signatures and contracts
+  - Every time you encounter a new function make sure you know:
+    a. its name
+    b. its input arguments and their types and whether they're optional
+    c. finds the file that is referenced in the string, runs the file, returns whatever the final value of modules.export
+    d. each files needs to export the function
+    e. watch out for parantheses which would export the function return and not the function itself (module.export uncoolFunction vs. var = uncoolFunction = require('./dependency'))
+
+- Be aware of the data types and values of variables
+  - what is the default value of modules.export
+    a. an empty object (console.log(typeof module.Exports))
+
+- Modules: A .js file that is run by node
+- Exporting: Modifying module.exports so that values available in one file are available outside of that file through...
+- Importing: Using the require function to access the value of module.exports from another file after running that file
+
+- Built-in Modules: Node comes with a number of named modules
+
+- npm: Handy program that helps manage dependencies
+ write own modules, use node's built-in modules
+  - npm init
+  - --save-dev is used to save the package for development purpose. Example: unit tests, minification..
+    --save is used to save the package required for the application to run.
+
+- Third-party modules
+
+- Mock Test: Editing functions to Pass
+

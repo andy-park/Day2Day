@@ -1,0 +1,29 @@
+first kind declaration
+
+anonymous function - taking function object and assigning to variable
+
+secondKind(); - paran runs the function
+
+callback function is still anonymous
+
+app.get('/', function(req,res,index) {
+  res.render(index)
+})
+
+is equal to
+
+app.get('/', (req,res,index) => {
+  ('also_index')
+})
+
+objects as dictionaries
+
+building a tool kit within an object
+
+telling JS look up the dictionary
+
+params are for data outside the function and you need it inside the function
+
+assume functions are blind and oblivious to outside the world and they tend to look only within themselves
+
+calling returns
